@@ -1,0 +1,36 @@
+{
+  "name": "palladio-app",
+  "description": "Palladio website and reference implementation for the Palladio framework.",
+  "homepage": "http://hdlab.stanford.edu/palladio",
+  "repository": "https://github.com/humanitiesplusdesign/palladio-app",
+  "scripts": {
+    "build": "NODE_ENV=production webpack",
+    "build-dev": "webpack",
+    "develop": "webpack --mode development --watch",
+    "start": "cd server && npm install --only=production && node server.js"
+  },
+  "engines": {
+    "node": "14.x",
+    "npm": "6.14.x",
+    "yarn": "1.22.x"    
+  },
+  "dependencies": {
+    "YASQE": "git+https://github.com/Triply-Dev/YASGUI.YASQE-deprecated#v2.10.0",
+    "YASR": "git+https://github.com/Triply-Dev/YASGUI.YASR-deprecated#v1.2.0",
+    "palladio": "git+https://github.com/humanitiesplusdesign/palladio#1.3.0",
+    "palladio-cards-component": "git+https://github.com/humanitiesplusdesign/palladio-cards-component#1.1.0",
+    "palladio-facet-component": "git+https://github.com/humanitiesplusdesign/palladio-facet-component#1.2.0",
+    "palladio-graph-component": "git+https://github.com/humanitiesplusdesign/palladio-graph-component#1.2.1",
+    "palladio-map-component": "git+https://github.com/humanitiesplusdesign/palladio-map-component#1.3.0",
+    "palladio-table-component": "git+https://github.com/humanitiesplusdesign/palladio-table-component#1.2.0",
+    "palladio-timeline-component": "git+https://github.com/humanitiesplusdesign/palladio-timeline-component#1.1.0",
+    "palladio-timespan-component": "git+https://github.com/humanitiesplusdesign/palladio-timespan-component#1.2.0"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^5.0.4",
+    "mini-css-extract-plugin": "^0.8.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.7"
+  }
+}
