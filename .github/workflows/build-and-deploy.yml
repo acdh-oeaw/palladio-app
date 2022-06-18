@@ -1,4 +1,4 @@
-name: Create image and Deploy
+name: Create Docker image and Deploy
 
 env:
   IMAGE_TAG: palladio-app:latest
